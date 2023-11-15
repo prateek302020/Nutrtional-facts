@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Nutrition Label</title>
+  <link href="./Nutrition Label_files/css" rel="stylesheet">
+  <link href="./Nutrition Label_files/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="label">
+    <header>
+      <h1 class="bold">Nutrition Facts</h1>
+      <div class="divider"></div>
+      <p>8 servings per container</p>
+      <p class="bold">Serving size <span>2/3 cup (55g)</span></p>
+    </header>
+    <div class="divider large"></div>
+    <div class="calories-info">
+      <div class="left-container">
+        <h2 class="bold small-text">Amount per serving</h2>
+        <p>Calories</p>
+      </div>
+      <span>230</span>
+    </div>
+    <div class="divider medium"></div>
+    <div class="daily-value small-text">
+      <p class="bold right no-divider">% Daily Value *</p>
+      <div class="divider"></div>
+      <p><span><span class="bold">Total Fat</span> 8g</span> <span class="bold">10%</span></p>
+      <p class="indent no-divider">Saturated Fat 1g <span class="bold">5%</span></p>
+      <div class="divider"></div>
+      <p class="indent no-divider"><span><i>Trans</i> Fat 0g</span></p>
+      <div class="divider"></div>
+      <p><span><span class="bold">Cholesterol</span> 0mg</span> <span class="bold">0%</span></p>
+      <p><span><span class="bold">Sodium</span> 160mg</span> <span class="bold">7%</span></p>
+      <p><span><span class="bold">Total Carbohydrate</span> 37g</span> <span class="bold">13%</span></p>
+      <p class="indent no-divider">Dietary Fiber 4g</p>
+      <div class="divider"></div>
+      <p class="indent no-divider">Total Sugars 12g</p>
+      <div class="divider double-indent"></div>
+      <p class="double-indent no-divider">Includes 10g Added Sugars <span class="bold">20%</span>
+      </p><div class="divider"></div>
+      <p class="no-divider"><span class="bold">Protein</span> 3g</p>
+      <div class="divider large"></div>
+      <p>Vitamin D 2mcg <span>10%</span></p>
+      <p>Calcium 260mg <span>20%</span></p>
+      <p>Iron 8mg <span>45%</span></p>
+      <p class="no-divider">Potassium 235mg <span>6%</span></p>
+    </div>
+    <div class="divider medium"></div>
+    <p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily
+      diet. 2,000 calories a day is used for general nutrition advice.</p>
+  </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
